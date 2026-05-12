@@ -68,3 +68,32 @@
         }
     }
 }
+
+.header-block__cart {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-right: 20px;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.7));
+    transition: transform 0.2s ease;
+
+    &:hover { transform: scale(1.15); }
+}
+
+.header-block__cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #c9a84c;
+    color: #111;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

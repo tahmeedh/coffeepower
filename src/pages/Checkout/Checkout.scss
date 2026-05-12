@@ -1,0 +1,202 @@
+.checkout {
+  min-height: 100vh;
+  background: url(../../assets/images/nuestros-cafes1-pc.jpg) center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 80px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 32px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__section-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 14px;
+
+    &--spacing {
+      margin-top: 20px;
+    }
+  }
+
+  &__hint {
+    color: #ddd;
+    font-size: 0.78rem;
+    margin: 0 0 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__input,
+  &__select,
+  &__textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.85);
+    color: #222;
+    font-size: 0.9rem;
+    outline: none;
+    box-sizing: border-box;
+
+    &::placeholder { color: #888; }
+    &:focus { border-color: #c9a84c; }
+  }
+
+  &__select {
+    appearance: none;
+    cursor: pointer;
+  }
+
+  &__textarea {
+    resize: vertical;
+  }
+
+  &__pay-btn {
+    margin-top: 8px;
+    width: 100%;
+    padding: 14px;
+    background: #3b2a1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover { background: #4e3825; }
+  }
+
+  &__stripe-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+    font-size: 0.78rem;
+    color: #ddd;
+    text-align: center;
+
+    strong { color: #638cfe; }
+  }
+
+  &__methods {
+    font-size: 0.72rem;
+    color: #bbb;
+  }
+
+  &__order-header {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #ddd;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    margin-bottom: 12px;
+  }
+
+  &__order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  &__order-item {
+    display: grid;
+    grid-template-columns: 52px 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__order-img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.3);
+  }
+
+  &__order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__order-name {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__order-weight {
+    color: #aaa;
+    font-size: 0.75rem;
+    margin: 0;
+  }
+
+  &__order-qty {
+    color: #ccc;
+    font-size: 0.85rem;
+  }
+
+  &__order-price {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  &__totals {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.88rem;
+    color: #ddd;
+
+    small {
+      display: block;
+      font-size: 0.7rem;
+      color: #aaa;
+    }
+
+    &--bold {
+      font-weight: 700;
+      font-size: 1rem;
+      color: white;
+      margin-top: 4px;
+    }
+  }
+}

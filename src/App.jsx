@@ -1,6 +1,9 @@
 import './App.scss';
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { CartProvider } from './context/CartContext';
+import Cart from './components/Cart/Cart';
+import Checkout from './pages/Checkout/Checkout';
 import SuscribeBtn from './components/SuscribeBtn/SuscribeBtn'
 import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
@@ -118,6 +121,7 @@ function Layout() {
           <Route path='/accesorios' element={<AccesoriesPro />} />
           <Route path='/suscribe' element={<SuscribePage />} />
           <Route path='/suscribe/confirmation' element={<SuscribedPage />} />
+          <Route path='/checkout' element={<Checkout />} />
         </Routes>
       </motion.div>
     </AnimatePresence>
@@ -126,19 +130,20 @@ function Layout() {
 
 function App() {
   return (
-    <SimpleBar style={{ maxHeight: '100vh' }}>
-
-      <Router>
-        <div className="app">
-          <Header />
-          <Layout />
-          <ButtonCompraExpres />
-          <ButtonNuestrosCafes />
-          <SuscribeBtn />
-         
-        </div>
-      </Router>
-    </SimpleBar>
+    <CartProvider>
+      <SimpleBar style={{ maxHeight: '100vh' }}>
+        <Router>
+          <div className="app">
+            <Header />
+            <Layout />
+            <ButtonCompraExpres />
+            <ButtonNuestrosCafes />
+            <SuscribeBtn />
+            <Cart />
+          </div>
+        </Router>
+      </SimpleBar>
+    </CartProvider>
 
   );
 }

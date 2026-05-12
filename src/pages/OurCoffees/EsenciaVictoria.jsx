@@ -1,5 +1,15 @@
 import React from 'react';
 import './styles.scss';
+import AddToCart from '../../components/AddToCart/AddToCart';
+import victoriaImg from '../../assets/coffees/esencia-de-victoria.png';
+
+const PRODUCT = {
+  id: 'esencia-victoria',
+  name: '🇨🇴 Esencia de Victoria',
+  price: 15,
+  image: victoriaImg,
+  weight: 'Grano · 250g',
+};
 
 const EsenciaVictoria = () => {
     return (
@@ -31,6 +41,7 @@ const EsenciaVictoria = () => {
                     </div>
                     <div className="victoria-page__paragraph">
                         <h3>💖 Descripción emocional:</h3>
+                        <AddToCart product={PRODUCT} />
                     </div>
                     <div className="victoria-page__paragraph">
 

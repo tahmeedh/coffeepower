@@ -3,17 +3,18 @@ import "./MobileHeader.scss";
 import { Link, NavLink } from "react-router-dom";
 import logoImg from "../../assets/images/logo-nuevo.png"
 import { Squeeze as Hamburger } from "hamburger-react";
-import menuBtn1 from '../../assets/images/menu-1.png';
 import menuBtn2 from '../../assets/images/menu-2.png';
 import menuBtn3 from '../../assets/images/menu-3.png';
 import menuBtn4 from '../../assets/images/menu-4.png';
 import whatsappBtn from '././../../assets/images/whatsapp.png'
 import { useAuth } from "../../context/AuthContext";
+import { useCart } from "../../context/CartContext";
 import BackgroundMusic from "../BackgroundMusic/BackgroundMusic";
 
 const MobileHeader = () => {
   const [open, setOpen] = useState(false);
-  const { user } = useAuth(); // ✅ Corrección aquí
+  const { user } = useAuth();
+  const { itemCount, setIsOpen: openCart } = useCart();
   const ubication = window.location.pathname;
 
   const menuItems = [
@@ -52,9 +53,9 @@ const MobileHeader = () => {
         <Link to='/'>
           <img className="header-mobile__logo" src={logoImg} alt="logo-aroma-king" />
         </Link>
-
-
-
+        <button className="header-mobile__cart" onClick={() => openCart(true)}>
+          🛒{itemCount > 0 && <span className="header-mobile__cart-badge">{itemCount}</span>}
+        </button>
       </div>
       
       <nav className={`header-nav ${!open ? 'slide-in' : 'slide-out'}`}>

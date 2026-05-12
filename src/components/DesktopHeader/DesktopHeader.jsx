@@ -2,13 +2,12 @@ import React, { useContext } from 'react';
 import './DesktopHeader.scss';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo-nuevo.png'
-import menuBtn1 from '../../assets/images/menu-1.png';
 import menuBtn2 from '../../assets/images/menu-2.png';
 import menuBtn3 from '../../assets/images/menu-3.png';
 import menuBtn4 from '../../assets/images/menu-4.png';
-import menuBtn5 from '../../assets/images/login.png'
 import whatsappBtn from '././../../assets/images/whatsapp.png'
 import { useAuth } from "../../context/AuthContext";
+import { useCart } from '../../context/CartContext';
 import BackgroundMusic from '../BackgroundMusic/BackgroundMusic';
 
 const menuItems = [
@@ -23,6 +22,15 @@ const menuItems = [
     },
 
 ]
+
+const CartButton = () => {
+    const { itemCount, setIsOpen } = useCart();
+    return (
+        <button className='header-block__cart' onClick={() => setIsOpen(true)}>
+            🛒{itemCount > 0 && <span className='header-block__cart-badge'>{itemCount}</span>}
+        </button>
+    );
+};
 
 const MainNav = ({ fontColor }) => {
 
@@ -62,8 +70,8 @@ const DesktopHeader = ({ linkColor }) => {
             <Link to='/'>
                 <img className='header-block__logo' src={logo} />
             </Link>
-
             <MainNav fontColor={linkColor} />
+            <CartButton />
         </div>
     )
 }
