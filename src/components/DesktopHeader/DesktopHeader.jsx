@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './DesktopHeader.scss';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo-nuevo.png'
+import cartIcon from '../../assets/images/cart.png'
 import menuBtn2 from '../../assets/images/menu-2.png';
 import menuBtn3 from '../../assets/images/menu-3.png';
 import menuBtn4 from '../../assets/images/menu-4.png';
@@ -27,7 +28,8 @@ const CartButton = () => {
     const { itemCount, setIsOpen } = useCart();
     return (
         <button className='header-block__cart' onClick={() => setIsOpen(true)}>
-            🛒{itemCount > 0 && <span className='header-block__cart-badge'>{itemCount}</span>}
+            <img src={cartIcon} alt="carrito" className='header-block__cart-img' />
+            {itemCount > 0 && <span className='header-block__cart-badge'>{itemCount}</span>}
         </button>
     );
 };

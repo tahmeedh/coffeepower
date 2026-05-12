@@ -7,6 +7,7 @@ import menuBtn2 from '../../assets/images/menu-2.png';
 import menuBtn3 from '../../assets/images/menu-3.png';
 import menuBtn4 from '../../assets/images/menu-4.png';
 import whatsappBtn from '././../../assets/images/whatsapp.png'
+import cartIcon from '../../assets/images/cart.png'
 import { useAuth } from "../../context/AuthContext";
 import { useCart } from "../../context/CartContext";
 import BackgroundMusic from "../BackgroundMusic/BackgroundMusic";
@@ -54,7 +55,8 @@ const MobileHeader = () => {
           <img className="header-mobile__logo" src={logoImg} alt="logo-aroma-king" />
         </Link>
         <button className="header-mobile__cart" onClick={() => openCart(true)}>
-          🛒{itemCount > 0 && <span className="header-mobile__cart-badge">{itemCount}</span>}
+          <img src={cartIcon} alt="carrito" className="header-mobile__cart-img" />
+          {itemCount > 0 && <span className="header-mobile__cart-badge">{itemCount}</span>}
         </button>
       </div>
       
