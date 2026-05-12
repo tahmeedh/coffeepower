@@ -1,0 +1,46 @@
+.confirmation-screen {
+    height: 100vh;
+    width: 100vw;
+    background: url(../../assets/images/granos.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+
+    }
+
+    &__image {
+        width: 300px;
+    }
+
+    @media (max-width:675px) {
+        background: url(../../assets/images/form-mobile.png);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+
+        &__block{
+            margin-top: 80px;
+            margin-bottom: 120px;
+
+            p{
+                text-align: justify;
+            }
+        }
+
+        &__image{
+            width: 200px;
+        }
+    }
+}

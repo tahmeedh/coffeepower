@@ -1,0 +1,54 @@
+.suscribe-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../../assets/images/suscribe.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 1200px;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        p {
+            margin: 10px;
+            font-size: 24px;
+        }
+    }
+    &__form {
+        background: rgba(0, 0, 0, 0.301);
+        backdrop-filter: blur(10px);
+        margin: 10px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    @media (max-width: 675px) {
+        background-size: cover;
+        height: 150vh;
+        background-position: center;
+        background: url(../../assets/images/form-mobile.jpg);
+        &__block {
+            width: 90%;
+        }
+        &__header {
+            margin-top: 100px;
+        }
+        &__form {
+            width: 90%;
+            margin-bottom: 120px;
+        }
+    }
+}

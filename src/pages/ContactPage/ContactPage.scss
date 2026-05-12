@@ -1,0 +1,84 @@
+.contact {
+    &__block {
+        background-image: url(../../assets/images/contacto.png);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; // Fija el fondo
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    &__map {
+        width: 350px;
+        height: 300px;
+        border-radius: 16px;
+        margin-top: 20px;
+    }
+    &__icon {
+        width: 100px;
+    }
+    &__info {
+        padding: 10px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin-top: 20px;
+    }
+    &__fieldset {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 200px;
+        text-decoration: none;
+    }
+    &__link {
+        margin: 0;
+        font-weight: 600;
+        color: white;
+        margin-top: 0px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    @media (max-width: 675px) {
+        &__block {
+            height: 100vh;
+            background: url(../../assets/images/contacto-movil.png);
+            background-position: center;
+            background-size: cover;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        &__fieldset {
+            display: flex;
+            flex-direction: row;
+        }
+        &__map {
+            margin-top: 10px;
+            width: 260px;
+            height: 260px;
+        }
+        &__info {
+            justify-content: flex;
+            background: none;
+            width: 70%;
+        }
+        &__title{
+            font-size: 28px;
+
+        }
+    }
+}

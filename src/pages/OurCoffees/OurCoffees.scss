@@ -1,0 +1,256 @@
+.our-coffees {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    &__subtitle{
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        background: url(../../assets/images/nuestros-cafes.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+    }
+    &__list2 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        flex-direction: column;
+    }
+    &__block2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: url(../../assets/images/nuestros-cafes-2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+
+        p {
+            text-align: justify;
+            margin: 10px;
+            font-weight: 600;
+        }
+    }
+    &__block3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: url(../../assets/images/nuestros-cafes-3.jpg);
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 100px;
+
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    &__block4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: url(../../assets/images/colombian-selection.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+    }
+    &__block5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: url(../../assets/images/colombia-esencia-2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+
+        p {
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+    }
+    &__block6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: url(../../assets/images/reserva-chef.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+
+        h2 {
+            text-align: center;
+        }
+    }
+    &__title {
+        margin-top: 100px;
+      
+    }
+    &__paragraph {
+        max-width: 1200px;
+        text-align: justify;
+        font-weight: 500;
+    }
+}
+.cafe-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.301);
+    backdrop-filter: blur(10px);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+
+    &__image {
+        width: 260px;
+    }
+    &__title {
+        text-transform: capitalize;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    &__description {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-coffees {
+        &__list,
+        &__list2 {
+            width: 80%;
+            p {
+                width: 100%;
+            }
+        }
+        &__block2 {
+            background-position: right;
+            p {
+                width: 80%;
+            }
+        }
+        &__block {
+            padding-bottom: 100px;
+            background: url(../../assets/images/nuestros-cafes-movil.jpg);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+
+        }
+        &__block3 {
+            padding-bottom: 100px;
+            background: url(../../assets/images/nuestros-cafes-3-movil.jpg);
+            background-size: cover;
+            background-position: top;
+            height: auto;
+
+            p{
+                margin: 4px;
+            }
+        }
+        &__block4 {
+            height: 100vh;
+            width: 100%;
+            background: url(../../assets/images/esencia2-movil.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &__paragraph {
+            width: 90%;
+        }
+        &__block5 {
+            background: url(../../assets/images/esencia-movil.jpg);
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            flex-direction: column;
+
+            p {
+                text-align: center;
+                width: 86%;
+            }
+        }
+        &__block6 {
+            background: url(../../assets/images/reserva-movil.jpg);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            flex-direction: column;
+        }
+
+        &__subtitle {
+            text-align: center;
+            width: 90%;
+            padding-top: 60px;
+            font-size: 24px;
+        }
+    }
+}
+.colombian-card {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    &__image {
+        width: 400px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 675px) {
+        &__image {
+            width: 200px;
+        }
+    }
+}

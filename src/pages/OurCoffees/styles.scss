@@ -1,0 +1,2500 @@
+.victoria-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/esencia-victoria.jpg);
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+
+.bendecido {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/el-bendecido.png);
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+        }
+    }
+}
+.origen {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/el-origen.png);
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-top: 80px;
+            padding-bottom: 100px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+        }
+    }
+}
+.kenia {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/kenia-fondo.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        font-family: "Inria Serif", serif;
+        font-size: 46px;
+        font-weight: 300;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+    }
+    &__paragraph {
+        text-decoration: none;
+        width: 80%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            height: 100vh;
+            padding-bottom: 100px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            background: url(../../assets/images/kenia-movil.jpg);
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+            text-align: center;
+        }
+        &__paragraph {
+            width: 90%;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+.bourbon {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/bourbon-fondo.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        font-family: "Inria Serif", serif;
+        font-size: 46px;
+        color: goldenrod;
+        font-weight: 700;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+    }
+    &__paragraph {
+        text-decoration: none;
+        width: 80%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            height: 100vh;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            background: url(../../assets/images/bourbon-movil.jpg);
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+            text-align: center;
+        }
+        &__paragraph {
+            width: 90%;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.geisha-page1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/geisha2.jpg);
+        object-fit: cover;
+        background-size: cover;
+        background-position: right;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 40px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+        background-size: cover;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            padding-top: 60px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+        &__elements {
+            width: 90%;
+            margin-top: 10px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            background: url(../../assets/images/geisha-mobile.jpg);
+            height: auto;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 90%;
+        }
+    }
+}
+.geisha-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.geisha-page2 {
+    background: url(../../assets/images/geisha-pc.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__elements {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+    }
+
+    &__paragraph {
+        text-align: justify;
+        width: 500px;
+    }
+
+    @media (max-width: 675px) {
+        height: auto;
+        background-position: center;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 100px;
+        &__paragraph {
+            width: 90%;
+        }
+        &__block {
+            padding-top: 60px;
+        }
+        &__elements {
+            width: 100%;
+        }
+    }
+}
+.supremo-page1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/supremo-pc.jpg);
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 40px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+        }
+    }
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            padding-top: 60px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+        &__elements {
+            width: 90%;
+            margin-top: 10px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+            margin-bottom: 0;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 90%;
+        }
+    }
+}
+.relax-page1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/relax-pc.jpg);
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+        }
+    }
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            padding-top: 60px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+        &__elements {
+            width: 90%;
+            margin-top: 10px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+            margin-bottom: 0;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            background: url(../../assets/images/relax-movil.jpg);
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 90%;
+        }
+    }
+}
+.relax-page2 {
+    background: url(../../assets/images/relax2-pc.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__elements {
+        margin-top: 10px;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__paragraph {
+        text-align: justify;
+        p {
+            font-weight: 500;
+        }
+    }
+
+    @media (max-width: 675px) {
+        background: url(../../assets/images/relax2-movi.jpg);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 100px;
+        &__paragraph {
+            width: 90%;
+        }
+        &__block {
+            padding-top: 60px;
+        }
+        &__elements {
+            font-weight: 500;
+        }
+    }
+}
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: flex; // o grid, según tu estilo original
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+}
+
+.serenidad-page1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/serenidad1.jpg);
+        object-fit: cover;
+        background-size: cover;
+        background-position: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 90%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            padding-top: 60px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+        &__elements {
+            width: 90%;
+            margin-top: 10px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            background: url(../../assets/images/serenidad1-movil.jpg);
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 90%;
+        }
+    }
+}
+.serenidad-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.serenidad-page2 {
+    background: url(../../assets/images/serenidad2-pc.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__elements {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+    }
+
+    &__paragraph {
+        text-align: justify;
+        width: 500px;
+    }
+
+    @media (max-width: 675px) {
+        background: url(../../assets/images/serenidad2-movil.jpg);
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 100px;
+        &__paragraph {
+            width: 90%;
+        }
+        &__block {
+            padding-top: 60px;
+        }
+        &__elements {
+            width: 100%;
+        }
+    }
+}
+.amucc {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/amucc-pc.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: black;
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            padding-top: 100px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            background: url(../../assets/images/amucc-movil.jpg);
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+        }
+    }
+}
+.total-relax {
+    &__page {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-position: center;
+        justify-content: center;
+    }
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/descafeinados-pc.jpg);
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.panama-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/panama.jpg);
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.brasil-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/brasil.jpg);
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.puertorico-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/puertorico.jpg);
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.goldensunset-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/golden-sunset.jpg);
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.caracolillo-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/caracolillo.png);
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.caracolillo-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/caracolillo.png);
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.nicaragua-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/nicaragua.png);
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.peru-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/peru.png);
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.costarica-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/costarica.png);
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}
+.hawaii-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+        background: url(../../assets/images/hawai.png);
+        background-position: center;
+        object-fit: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+    }
+    &__perfil {
+        margin-bottom: 100px;
+        width: 80%;
+        margin-left: 40px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.301);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 20px;
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            0deg,
+            rgba(77, 77, 77, 1) 0%,
+            rgba(20, 20, 20, 1) 34%,
+            rgba(43, 43, 43, 1) 70%,
+            rgba(38, 38, 38, 1) 100%
+        );
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-decoration: none;
+
+        width: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: justify;
+        border-radius: 16px;
+
+        p {
+            margin: 6px;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        width: 100%;
+
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block {
+            margin-right: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 80px;
+        }
+        &__perfil {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            margin-left: 0;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__paragraph {
+            width: 86%;
+            text-align: justify;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.noche-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__section1 {
+        height: 100vh;
+        background: url(../../assets/images/night-pc.jpg);
+        background-position: center;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__section2 {
+        background: black;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__elements {
+        list-style: decimal;
+        margin-bottom: 10px;
+    }
+    &__set {
+    }
+    &__list {
+        margin-bottom: 10px;
+    }
+    &__paragraph {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 100px;
+        text-align: justify;
+    }
+
+    @media (max-width: 675px) {
+        &__section1 {
+            background: url(../../assets/images/noche-movil.jpg);
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            justify-content: flex-start;
+        }
+        &__paragraph {
+            width: 86%;
+            margin-top: 80px;
+
+            p {
+                font-weight: 500;
+            }
+        }
+        &__section2 {
+            height: auto;
+        }
+    }
+}

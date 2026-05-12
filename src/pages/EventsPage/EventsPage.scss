@@ -1,0 +1,95 @@
+.events-page {
+    height: 100vh;
+    width: 100%;
+    background: url(../../assets/images/eventos-pc.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ 
+    flex-direction: column;
+
+    &__content {
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+    }
+    &__meeting{
+        outline: 1px solid rgb(255, 254, 221);
+        background: rgba(0, 0, 0, 0.301);
+        margin: 20px;
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 16px;
+        width: 36%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        backdrop-filter: blur(10px); 
+        justify-content: center;
+        &:hover {
+            background: rgba(145, 145, 145, 0.4); // Color dorado translúcido
+            transform: scale(1.05); // Pequeño efecto de zoom
+        }
+    }
+    &__subtitle{
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: 10px;
+        text-align: center;
+    }
+    &__legend{
+        color: white;
+        margin: 4px;
+        font-weight: 300;
+        text-align: center;
+    }
+    &__title{
+        color: white;
+        padding-top: 140px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    &__image{
+        width: 200px;
+    }
+    &__info{
+        display: flex;
+    }
+    &__list{
+        margin: 0;
+    }
+
+    @media (max-width: 675px) {
+        min-height: 100vh; // Asegura que cubra la pantalla completamente
+        height: auto; // Permite que crezca si el contenido es mayor
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        background: url(../../assets/images/events-movil.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; // Evita que se repita la imagen
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__meeting{
+            width: 80%;
+        }
+        &__image{
+            width: 160px;
+        }
+        &__title{
+            padding: 0;
+        }
+    }
+}

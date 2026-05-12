@@ -1,0 +1,37 @@
+.mosaic-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    width: 300px;
+
+    &__image {
+        width: 150px;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__title {
+        text-transform: capitalize;
+        text-align: center;
+    }
+    &__description {
+        text-align: center;
+    }
+
+    @media (max-width: 675px) {
+        width: 100%;
+
+        &__image{
+            width: 70%;
+        }
+        &__description{
+            width: 80%;
+        }
+    }
+}

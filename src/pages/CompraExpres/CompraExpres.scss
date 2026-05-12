@@ -1,0 +1,90 @@
+.compra-expres {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/images/nuestros-cafes1-pc.jpg) center / cover no-repeat;
+  }
+
+  &__title {
+    color: #c9a84c;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    width: 90%;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 380px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.04);
+      box-shadow: 0 0 20px rgba(201, 168, 76, 0.55);
+    }
+  }
+
+  &__card-name {
+    color: #2c1a0e;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 10px 0;
+    text-transform: capitalize;
+  }
+
+  &__card-legend {
+    color: #4a3020;
+    font-size: 0.88rem;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+  }
+
+  @media (max-width: 675px) {
+    height: auto;
+
+    &__block {
+      background: url(../../assets/images/nuestros-cafes-movil.jpg) center / cover no-repeat;
+      padding: 100px 0 160px;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+      padding: 0 16px;
+      text-align: center;
+    }
+  }
+}

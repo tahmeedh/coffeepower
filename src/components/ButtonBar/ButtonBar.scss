@@ -1,0 +1,26 @@
+.button-bar {
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        padding-bottom: 30px;
+        bottom: 0;
+    }
+
+    &__btn {
+      
+    }
+
+    @media (max-width:675px) {
+        &__block{
+            padding-bottom: 10px;
+        }
+        &__btn{
+            width: 100px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
+}

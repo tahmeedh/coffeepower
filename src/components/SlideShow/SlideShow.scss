@@ -1,0 +1,158 @@
+.slideshow {
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+
+  &__reflection {
+    display: block;
+    max-width: 300px;
+    margin-top: -2px;
+    transform: scaleY(-1); /* Voltea la imagen verticalmente */
+    opacity: 0.4;
+    border-radius: 8px;
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      transparent 70% s
+    ); /* Para navegadores que soportan mask-image */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent); /* Safari/Chrome */
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Asegura que cada diapositiva ocupe el 100% del ancho */
+    flex-shrink: 0; /* Evita que las imágenes se compriman */
+    text-decoration: none;
+    flex-direction: column;
+    color: white;
+  }
+
+  &__image {
+    width: 100%; /* Cambiar a 100% para que ocupe todo el ancho del contenedor */
+    max-width: 300px; /* Puedes definir un tamaño máximo si quieres */
+  }
+
+  &__wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: white;
+    width: 300px;
+    text-align: center;
+  }
+
+  &__controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  &__indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: background-color 0.3s;
+
+      &.active {
+        background-color: white;
+      }
+    }
+  }
+
+  &__nav-label {
+    font-size: 0.85rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    font-weight: 600;
+    text-transform: capitalize;
+    flex-direction: column;
+    margin: 4px;
+  }
+
+  &__button {
+    background-color: transparent;
+    color: white;
+    width: 130px;
+    height: 130px;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.432);
+    }
+  }
+
+  /* Estilos para móviles */
+  @media (max-width: 675px) {
+    width: 100%;
+    flex-direction: column;
+    &__description {
+      margin: 4px;
+      font-size: 18px;
+      width: 320px;
+    }
+    &__controls {
+      display: none !important;
+    }
+    &__image {
+      width: 100vw; // Ocupa todo el ancho del viewport
+      max-width: 80vw;
+      height: auto;
+      object-fit: cover;
+    }
+    &__title {
+      width: 330px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+}
+.slideshow__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+  gap: 5px;
+}

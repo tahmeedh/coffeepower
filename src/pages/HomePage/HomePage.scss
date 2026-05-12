@@ -1,0 +1,42 @@
+.video-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh; // <-- agrega esto
+
+}
+.video-title{
+  z-index: 100;
+  position: absolute;
+}
+.home-page {
+  &__container {
+    position: relative;
+  }
+}
+.hero-section1{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p{
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1075px) {
+  .video-background {
+    object-fit: cover;
+    object-position: center;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(0);
+  }
+}

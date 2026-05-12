@@ -1,0 +1,114 @@
+.tasting-page{
+    width: 100%;
+    height: 100vh;;
+    background: url(../../assets/images/catas.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: scroll;
+    flex-direction: column;
+
+    &__toggle{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background: rgba(255, 255, 255, 0.5);
+        color:black;
+        font-weight: 500;
+        font-family: 'Quicksand', serif;
+        font-size: 14px;
+    }
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__buttons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__option{
+        outline: 1px solid rgb(255, 254, 221);
+        background: rgba(0, 0, 0, 0.301);
+        margin: 10px;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 16px;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        backdrop-filter: blur(10px); 
+        justify-content: center;
+        margin-bottom: 10px;
+        
+      
+    }
+    &__subtitle{
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        text-transform: capitalize;
+        font-weight: 500;
+        text-align: center;
+
+    }
+    &__legend{
+        color: white;
+        margin: 0;
+        text-align: center;
+    }
+    &__title{
+        color: white;
+        padding-top: 140px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    &__image{
+        width: 200px;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__list{
+        margin: 0;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 675px) {
+        height: auto; // Se puede quitar si agregamos min-height
+        min-height: 100vh; // Asegura que cubra toda la pantalla
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        background: url(../../assets/images/contacto-movil.webp) no-repeat center center;
+        background-size: cover;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__option{
+            width: 70%;
+            margin: 20px;
+        }
+        &__image{
+            width: 160px;
+        }
+        &__title{
+            padding: 0;
+        }
+    }
+}

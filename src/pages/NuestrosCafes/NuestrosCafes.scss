@@ -1,0 +1,105 @@
+.nuestros-cafes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: url(../../assets/images/aboutus-1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    &__title {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #864c2e;
+        text-transform: uppercase;
+        padding-bottom: 100px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // 3 columnas automáticas
+        gap: 20px;
+        max-width: 1200px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr); // 2 columnas en tablets
+        }
+
+        @media (max-width: 675px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding-bottom: 140px;
+        }
+    }
+    @media (max-width: 675px) {
+        height: auto;
+        &__block {
+            background: url(../../assets/images/aboutus-movil.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+
+        }
+        &__title {
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+    }
+}
+.subcategories-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.301);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s all ease-in;
+
+    &__label {
+        font-weight: 700;
+        color: white;
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        text-transform: capitalize;
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.7));
+    }
+
+    &__legend {
+        color: white;
+        font-weight: 400;
+        text-align: center;
+        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
+    }
+
+    @media (max-width: 675px) {
+        max-width: 70%;
+        padding: 12px;
+    }
+    &:hover{
+        background: transparent ;
+        backdrop-filter: blur(0px);
+    }
+}
