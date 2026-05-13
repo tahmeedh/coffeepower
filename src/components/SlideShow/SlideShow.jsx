@@ -6,7 +6,7 @@ import { useCart } from '../../context/CartContext';
 const MOLIENDAS = ['Grano', 'Molido espresso', 'Molido italiana', 'Molido prensa', 'Molido filtro', 'V60', 'Chemex'];
 const GRAMAJES = ['250g', '300g'];
 
-const SlideItem = ({ item }) => {
+const SlideItem = ({ item, onPrev, onNext, showControls }) => {
     const { addItem } = useCart();
     const [molienda, setMolienda] = useState('Grano');
     const [gramaje, setGramaje] = useState('250g');
@@ -26,7 +26,15 @@ const SlideItem = ({ item }) => {
     return (
         <div className="slideshow__content">
             <h3 className="slideshow__title">{item.name}</h3>
-            <img src={item.image} alt={item.name} className="slideshow__image" />
+            <div className="slideshow__image-row">
+                {showControls && (
+                    <button className="slideshow__arrow slideshow__arrow--prev" onClick={onPrev}>&#10094;</button>
+                )}
+                <img src={item.image} alt={item.name} className="slideshow__image" />
+                {showControls && (
+                    <button className="slideshow__arrow slideshow__arrow--next" onClick={onNext}>&#10095;</button>
+                )}
+            </div>
             <div className="slideshow__selector">
                 <p className="slideshow__selector-label">TIPO DE MOLIENDA</p>
                 <div className="slideshow__pills">
@@ -66,13 +74,8 @@ const SlideItem = ({ item }) => {
 const SlideShow = ({ items }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextSlide = () => {
-        setCurrentIndex((prev) => (prev + 1) % items.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
-    };
+    const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % items.length);
+    const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
 
     const handlers = useSwipeable({
         onSwipedLeft: () => nextSlide(),
@@ -88,25 +91,15 @@ const SlideShow = ({ items }) => {
                 width: `${items.length * 100}%`,
             }}>
                 {items.map((item, index) => (
-                    <SlideItem key={index} item={item} />
+                    <SlideItem
+                        key={index}
+                        item={item}
+                        onPrev={prevSlide}
+                        onNext={nextSlide}
+                        showControls={items.length > 1}
+                    />
                 ))}
             </div>
-            {items.length > 1 && (
-                <div className="slideshow__controls">
-                    <div className="slideshow__nav">
-                        <button onClick={prevSlide} className="slideshow__button">
-                            &#10094;
-                            <p className="slideshow__nav-label">{items[(currentIndex - 1 + items.length) % items.length].name}</p>
-                        </button>
-                    </div>
-                    <div className="slideshow__nav">
-                        <button onClick={nextSlide} className="slideshow__button">
-                            &#10095;
-                            <p className="slideshow__nav-label">{items[(currentIndex + 1) % items.length].name}</p>
-                        </button>
-                    </div>
-                </div>
-            )}
         </div>
     );
 };

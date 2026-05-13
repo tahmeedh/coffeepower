@@ -7,37 +7,14 @@
   align-items: center;
   justify-content: center;
 
-  &__reflection {
-    display: block;
-    max-width: 300px;
-    margin-top: -2px;
-    transform: scaleY(-1); /* Voltea la imagen verticalmente */
-    opacity: 0.4;
-    border-radius: 8px;
-    mask-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.7),
-      transparent 70% s
-    ); /* Para navegadores que soportan mask-image */
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent); /* Safari/Chrome */
-    mask-size: 100% 100%;
-    -webkit-mask-size: 100% 100%;
-  }
-
   &__content {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Asegura que cada diapositiva ocupe el 100% del ancho */
-    flex-shrink: 0; /* Evita que las imágenes se compriman */
-    text-decoration: none;
+    width: 100%;
+    flex-shrink: 0;
     flex-direction: column;
     color: white;
-  }
-
-  &__image {
-    width: 100%; /* Cambiar a 100% para que ocupe todo el ancho del contenedor */
-    max-width: 300px; /* Puedes definir un tamaño máximo si quieres */
   }
 
   &__wrapper {
@@ -55,11 +32,43 @@
     text-transform: capitalize;
   }
 
-  &__description {
-    font-size: 1rem;
+  &__image-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+  }
+
+  &__image {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  &__arrow {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+  }
+
+  &__description {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
     width: 300px;
     text-align: center;
+    font-style: italic;
+    margin-top: 14px;
   }
 
   &__selector {
@@ -129,92 +138,24 @@
     }
   }
 
-  &__controls {
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-  }
-  &__nav-label {
-    font-size: 0.85rem;
-    color: white;
-    text-align: center;
-    display: flex;
-    font-weight: 600;
-    text-transform: capitalize;
-    flex-direction: column;
-    margin: 4px;
-  }
-
-  &__button {
-    background-color: transparent;
-    color: white;
-    width: 130px;
-    height: 130px;
-    border: none;
-    padding: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.432);
-    }
-  }
-
-  /* Estilos para móviles */
   @media (max-width: 675px) {
     width: 100%;
     flex-direction: column;
-    &__description {
-      margin: 4px;
-      font-size: 0.9rem;
-      width: 300px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.75);
-      font-style: italic;
-      margin-top: 14px;
-    }
-    &__controls {
-      position: relative;
-      top: auto;
-      transform: none;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 12px;
-    }
-    &__button {
-      width: 60px;
-      height: 60px;
-      font-size: 1.4rem;
-      background-color: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    &__nav-label {
-      display: none;
-    }
+
     &__image {
-      max-width: 80vw;
-      height: auto;
-      object-fit: cover;
+      max-width: 200px;
     }
+
     &__title {
-      width: 330px;
+      width: 300px;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
       font-weight: 600;
-      font-size: 20px;
+      font-size: 18px;
+    }
+
+    &__description {
+      width: 280px;
+      font-size: 0.85rem;
     }
   }
-}
-.slideshow__nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  color: white;
-  gap: 5px;
 }
