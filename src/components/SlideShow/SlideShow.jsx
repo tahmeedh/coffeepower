@@ -26,10 +26,8 @@ const SlideItem = ({ item }) => {
 
     return (
         <div className="slideshow__content">
-            <Link to={item.url} className="slideshow__product-link">
-                <h3 className="slideshow__title">{item.name}</h3>
-                <img src={item.image} alt={item.name} className="slideshow__image" />
-            </Link>
+            <h3 className="slideshow__title">{item.name}</h3>
+            <img src={item.image} alt={item.name} className="slideshow__image" />
             <div className="slideshow__selector">
                 <p className="slideshow__selector-label">TIPO DE MOLIENDA</p>
                 <div className="slideshow__pills">
@@ -59,6 +57,9 @@ const SlideItem = ({ item }) => {
             <button className="slideshow__add-btn" onClick={handleAdd}>
                 AÑADIR AL CARRITO
             </button>
+            <Link to={item.url} className="slideshow__product-link">
+                Ver más sobre este café →
+            </Link>
         </div>
     );
 };
