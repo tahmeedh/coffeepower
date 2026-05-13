@@ -127,12 +127,12 @@ function App() {
       <Router>
         <Header />
         <Cart />
-        <ButtonCompraExpres />
-        <ButtonNuestrosCafes />
-        <SuscribeBtn />
         <SimpleBar style={{ maxHeight: '100vh' }}>
           <div className="app">
             <Layout />
+            <ButtonCompraExpres />
+            <ButtonNuestrosCafes />
+            <SuscribeBtn />
           </div>
         </SimpleBar>
       </Router>
