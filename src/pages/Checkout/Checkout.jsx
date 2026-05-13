@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useCart, SHIPPING } from '../../context/CartContext';
 import './Checkout.scss';
 
@@ -22,20 +21,41 @@ const PROVINCIAS = [
 ];
 
 const Checkout = () => {
-  const { items, subtotal, total, clearCart } = useCart();
-  const navigate = useNavigate();
-
+  const { items, subtotal, total } = useCart();
   const [form, setForm] = useState({
     nombre: '', email: '', movil: '',
     calle: '', postal: '', comunidad: '', provincia: '', notas: '',
   });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    clearCart();
-    navigate('/');
+    setLoading(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          items: items.map(i => ({ name: i.name, price: i.price, quantity: i.quantity, image: i.image })),
+          customerEmail: form.email,
+          origin: window.location.origin,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) throw new Error(data.error || 'Error desconocido');
+
+      window.location.href = data.url;
+    } catch (err) {
+      setError('Error al procesar el pago. Inténtalo de nuevo.');
+      setLoading(false);
+    }
   };
 
   return (
@@ -67,7 +87,11 @@ const Checkout = () => {
 
             <textarea className="checkout__textarea" name="notas" placeholder="Indicaciones adicionales (opcional)" value={form.notas} onChange={handleChange} rows={4} />
 
-            <button className="checkout__pay-btn" type="submit">PAGAR AHORA</button>
+            {error && <p className="checkout__error">{error}</p>}
+
+            <button className="checkout__pay-btn" type="submit" disabled={loading}>
+              {loading ? 'Procesando...' : 'PAGAR AHORA'}
+            </button>
             <div className="checkout__stripe-badge">
               <span>🔒 Pago seguro procesado por <strong>stripe</strong></span>
               <span className="checkout__methods">Visa · Mastercard · Apple Pay · Google Pay</span>
