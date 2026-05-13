@@ -11,6 +11,10 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: 'No items in cart' });
   }
 
+  if (!origin || !/^https?:\/\//.test(origin)) {
+    return res.status(400).json({ error: 'Missing or invalid origin' });
+  }
+
   const lineItems = items.map(item => ({
     price_data: {
       currency: 'eur',
