@@ -20,7 +20,7 @@ module.exports = async (req, res) => {
       currency: 'eur',
       product_data: {
         name: item.name,
-        ...(item.image && { images: [item.image] }),
+        ...(item.image && /^https:\/\//.test(item.image) && { images: [item.image] }),
       },
       unit_amount: Math.round(item.price * 100),
     },
