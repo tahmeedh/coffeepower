@@ -34,6 +34,8 @@ const server = http.createServer((req, res) => {
     return res.end();
   }
 
+  console.log(`[dev-api] ${req.method} ${req.url}`);
+
   if (req.method === 'POST' && req.url === '/api/create-checkout-session') {
     // Add Express-like helpers that the Vercel function expects
     res.status = (code) => { res.statusCode = code; return res; };
