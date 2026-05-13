@@ -8,13 +8,11 @@ import menuBtn3 from '../../assets/images/menu-3.png';
 import menuBtn4 from '../../assets/images/menu-4.png';
 import whatsappBtn from '././../../assets/images/whatsapp.png'
 import cartIcon from '../../assets/images/cart.png'
-import { useAuth } from "../../context/AuthContext";
 import { useCart } from "../../context/CartContext";
 import BackgroundMusic from "../BackgroundMusic/BackgroundMusic";
 
 const MobileHeader = () => {
   const [open, setOpen] = useState(false);
-  const { user } = useAuth();
   const { itemCount, setIsOpen: openCart } = useCart();
   const ubication = window.location.pathname;
 
@@ -50,7 +48,7 @@ const MobileHeader = () => {
           ></Hamburger>
           <BackgroundMusic />
         </div>
-        
+
         <Link to='/'>
           <img className="header-mobile__logo" src={logoImg} alt="logo-aroma-king" />
         </Link>
@@ -59,7 +57,7 @@ const MobileHeader = () => {
           {itemCount > 0 && <span className="header-mobile__cart-badge">{itemCount}</span>}
         </button>
       </div>
-      
+
       <nav className={`header-nav ${!open ? 'slide-in' : 'slide-out'}`}>
 
         <div className="header-nav__sections">

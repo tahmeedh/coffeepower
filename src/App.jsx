@@ -13,14 +13,10 @@ import TastingPage from './pages/TastingPage/TastingPage';
 import ButtonCompraExpres from './components/ButtonEvents/ButtonEvents';
 import ButtonNuestrosCafes from './components/ButtonBuy/ButtonBuy';
 import CompraExpres from './pages/CompraExpres/CompraExpres';
-import RegisterPage from './pages/RegisterPage/RegisterPage';
-import LoginPage from './pages/LoginPage/LoginPage';
 import AboutUs from './pages/AboutUs/AboutUs';
 import OurCoffees from './pages/OurCoffees/OurCoffees';
 import PrivateMeeting from './pages/PrivateMeeting/PrivateMeeting';
 import ConfirmationScreen from './pages/ConfirmationScreen/ConfirmationScreen';
-import ProfilePage from './pages/ProfilePage/ProfilePage';
-import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import AccesoriesPro from './pages/AccesoriesPro/AccesoriesPro';
 import EsenciaVictoria from './pages/OurCoffees/EsenciaVictoria';
 import ElBendecido from './pages/OurCoffees/ElBendecido';
@@ -83,8 +79,6 @@ function Layout() {
           <Route path='/eventos' element={<EventsPage />} />
           <Route path='/eventos/catas' element={<TastingPage />} />
           <Route path='/quienessomos' element={<AboutUs />} />
-          <Route path='/registro' element={<RegisterPage />} />
-          <Route path="/login" element={<LoginPage />} />
           <Route path='/nuestroscafes' element={<NuestrosCafes />} />
           <Route path='/nuestroscafes/esenciavictoria' element={<EsenciaVictoria />} />
           <Route path='/nuestroscafes/elbendecido' element={<ElBendecido />} />
@@ -117,7 +111,6 @@ function Layout() {
           <Route path='/nuestroscafes/totalrelax' element={<TotalRelax />} />
           <Route path='/eventos/reunion' element={<PrivateMeeting />} />
           <Route path='/eventos/reunion/confirmacion' element={<ConfirmationScreen />} />
-          <Route path="/perfil" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
           <Route path='/accesorios' element={<AccesoriesPro />} />
           <Route path='/suscribe' element={<SuscribePage />} />
           <Route path='/suscribe/confirmation' element={<SuscribedPage />} />

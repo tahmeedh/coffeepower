@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './SuscribePage.scss';
 import { useNavigate } from 'react-router-dom';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { db } from '../../config/firebase';
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
 
@@ -29,13 +27,6 @@ const SuscribePage = () => {
         e.preventDefault();
 
         try {
-            // Guardar en Firestore
-            await addDoc(collection(db, 'suscriptores'), {
-                ...formData,
-                timestamp: serverTimestamp()
-            });
-
-            // Enviar a Brevo
             const response = await fetch('https://api.brevo.com/v3/contacts', {
                 method: 'POST',
                 headers: {
@@ -132,7 +123,7 @@ const SuscribePage = () => {
                                 paddingLeft: '48px' // espacio suficiente para que no se solape con la bandera
                               }}
                         />
-                
+
                     </fieldset>
 
                     <fieldset className="form__fieldset">

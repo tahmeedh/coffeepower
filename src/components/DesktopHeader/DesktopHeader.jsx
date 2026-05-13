@@ -7,7 +7,6 @@ import menuBtn2 from '../../assets/images/menu-2.png';
 import menuBtn3 from '../../assets/images/menu-3.png';
 import menuBtn4 from '../../assets/images/menu-4.png';
 import whatsappBtn from '././../../assets/images/whatsapp.png'
-import { useAuth } from "../../context/AuthContext";
 import { useCart } from '../../context/CartContext';
 import BackgroundMusic from '../BackgroundMusic/BackgroundMusic';
 
@@ -21,7 +20,6 @@ const menuItems = [
     {
         label: "contacto", imgUrl: menuBtn4, url: "/contacto"
     },
-
 ]
 
 const CartButton = () => {
@@ -35,9 +33,6 @@ const CartButton = () => {
 };
 
 const MainNav = ({ fontColor }) => {
-
-    const { user } = useAuth();
-
     return (
         <nav className='header-block__nav' >
             <BackgroundMusic/>
@@ -51,17 +46,11 @@ const MainNav = ({ fontColor }) => {
                         <p style={{ color: fontColor }} className="header-block__label">{item.label}</p>
                     </Link>
                 )
-
             })}
             <a className='header-block__items' href="https://wa.me/34620132131" target="_blank" rel="noopener noreferrer">
                 <img className='header-block__image' src={whatsappBtn} alt="whatsapp" />
                 <p className='header-block__label'>whatsapp</p>
             </a>
-            {/* <Link className='header-block__items' to={user ? "/perfil" : "/login"}>
-                <img src={menuBtn5} className='header-block__image' alt='perfil' />
-                <p className="header-block__label">{user ? 'Mi Perfil' : 'Login'}</p>
-            </Link> */}
-            
         </nav>
     )
 }
