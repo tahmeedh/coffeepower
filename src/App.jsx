@@ -124,20 +124,19 @@ function Layout() {
 function App() {
   return (
     <CartProvider>
-      <SimpleBar style={{ maxHeight: '100vh' }}>
-        <Router>
+      <Router>
+        <Header />
+        <Cart />
+        <ButtonCompraExpres />
+        <ButtonNuestrosCafes />
+        <SuscribeBtn />
+        <SimpleBar style={{ maxHeight: '100vh' }}>
           <div className="app">
-            <Header />
             <Layout />
-            <ButtonCompraExpres />
-            <ButtonNuestrosCafes />
-            <SuscribeBtn />
-            <Cart />
           </div>
-        </Router>
-      </SimpleBar>
+        </SimpleBar>
+      </Router>
     </CartProvider>
-
   );
 }
 

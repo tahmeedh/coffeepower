@@ -128,8 +128,14 @@ p{
   font-style: normal;
 }
 
-.gallery-block{
+.gallery-block {
   background: gray;
+  padding-top: 140px;
+  box-sizing: border-box;
+
+  @media (max-width: 1075px) {
+    padding-top: 0;
+  }
 }
 
 
