@@ -2,11 +2,10 @@
   position: relative;
   max-width: 100%;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
 
   &__reflection {
     display: block;
@@ -63,9 +62,84 @@
     text-align: center;
   }
 
+  &__product-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__selector {
+    background: #1c1c1c;
+    border-radius: 18px;
+    padding: 18px 22px;
+    width: 290px;
+    margin-top: 14px;
+  }
+
+  &__selector-label {
+    color: #c9a96e;
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  &__pill {
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+
+    &--active {
+      background: #c9a96e;
+      border-color: #c9a96e;
+      color: #1c1c1c;
+      font-weight: 700;
+    }
+
+    &:hover:not(&--active) {
+      border-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  &__add-btn {
+    background: #c9a96e;
+    color: #1c1c1c;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 320px;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #b8935d;
+    }
+  }
+
   &__controls {
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: 100%;
     display: flex;
     justify-content: space-between;
