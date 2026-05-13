@@ -9,7 +9,7 @@ import "react-phone-input-2/lib/style.css";
 const PrivateMeeting = () => {
     const form = useRef();
     const [phone, setPhone] = useState("");
-    const [enviado, setEnviado] = useState(false);
+    const [, setEnviado] = useState(false);
     const navigate = useNavigate();
 
     const enviarFormulario = (e) => {

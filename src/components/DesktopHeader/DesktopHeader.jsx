@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './DesktopHeader.scss';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo-nuevo.png'
@@ -59,7 +59,7 @@ const DesktopHeader = ({ linkColor }) => {
     return (
         <div className='header-block'>
             <Link to='/'>
-                <img className='header-block__logo' src={logo} />
+                <img className='header-block__logo' src={logo} alt="" />
             </Link>
             <MainNav fontColor={linkColor} />
             <CartButton />

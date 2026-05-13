@@ -8,7 +8,7 @@ const CheckoutSuccess = () => {
 
   useEffect(() => {
     clearCart();
-  }, []);
+  }, [clearCart]);
 
   return (
     <div className="checkout-success">

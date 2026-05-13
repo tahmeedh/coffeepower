@@ -19,8 +19,6 @@ import peru from '../assets/coffees/peru.png';
 import hawai from '../assets/coffees/hawaii.png';
 import puertoRico from '../assets/coffees/puerto-rico.png';
 import costaRica from '../assets/coffees/costa-rica.png';
-import { m } from 'framer-motion';
-
 
 const coffeesCatalogue = [
     {

@@ -25,7 +25,7 @@ function CountDown() {
   return (
     <div className="countdown" >
        <p>{timeLeft > 0 ? formatTime(timeLeft) : "¡Tiempo terminado!"}</p>
-      <img src={clock} className="countdown__img" />
+      <img src={clock} className="countdown__img" alt="" />
     </div>
   );
 }

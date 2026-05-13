@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./MobileHeader.scss";
 import { Link, NavLink } from "react-router-dom";
 import logoImg from "../../assets/images/logo-nuevo.png"
@@ -14,8 +14,6 @@ import BackgroundMusic from "../BackgroundMusic/BackgroundMusic";
 const MobileHeader = () => {
   const [open, setOpen] = useState(false);
   const { itemCount, setIsOpen: openCart } = useCart();
-  const ubication = window.location.pathname;
-
   const menuItems = [
     {
       label: "¿quiénes somos?", imgUrl: menuBtn2, url: "/quienessomos"

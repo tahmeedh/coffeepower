@@ -1,6 +1,5 @@
 // BackgroundMusic.jsx
-import { useEffect, useRef, useState } from "react";
-import { createPortal } from "react-dom";
+import { useRef, useState } from "react";
 import musicaFondo from '../../assets/video/bachata-fondo.mpeg'
 
 const BackgroundMusic = () => {

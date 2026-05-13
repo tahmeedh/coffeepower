@@ -3,7 +3,6 @@ import './ContactPage.scss';
 import instaBtn from '../../assets/icons/insta.png';
 import ubicationBtn from '../../assets/icons/ubi.png';
 import emailBtn from '../../assets/icons/email.png';
-import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
   return (

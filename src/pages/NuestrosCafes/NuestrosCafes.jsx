@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './NuestrosCafes.scss';
-import CowntDown from '../../components/CountDown/CowntDown'
 
 const subcategories = [
   {
