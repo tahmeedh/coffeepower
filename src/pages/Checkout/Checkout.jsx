@@ -51,6 +51,7 @@ const Checkout = () => {
 
       if (!res.ok) throw new Error(data.error || 'Error desconocido');
 
+      setLoading(false);
       window.location.href = data.url;
     } catch (err) {
       setError('Error al procesar el pago. Inténtalo de nuevo.');
