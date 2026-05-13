@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CartProvider } from './context/CartContext';
 import Cart from './components/Cart/Cart';
 import Checkout from './pages/Checkout/Checkout';
+import CheckoutSuccess from './pages/CheckoutSuccess/CheckoutSuccess';
 import SuscribeBtn from './components/SuscribeBtn/SuscribeBtn'
 import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
@@ -115,6 +116,7 @@ function Layout() {
           <Route path='/suscribe' element={<SuscribePage />} />
           <Route path='/suscribe/confirmation' element={<SuscribedPage />} />
           <Route path='/checkout' element={<Checkout />} />
+          <Route path="/checkout/success" element={<CheckoutSuccess />} />
         </Routes>
       </motion.div>
     </AnimatePresence>
